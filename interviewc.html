@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"
+      rel="stylesheet"
+    />
+    <!-- https://fonts.google.com/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- https://getbootstrap.com/ -->
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <!-- https://fontawesome.com/ -->
+    <link href="css/templatemo-diagoona.css" rel="stylesheet" />
+    <title>#codEasy</title>
+  </head>
+  <body>
+    <div class="tm-row pt-4">
+      <div class="tm-col-left">
+        <div class="tm-site-header media">
+          <!-- <i class="fas fa-umbrella-beach fa-3x mt-1 tm-logo"></i> -->
+          <div class="media-body">
+            <h1 class="tm-sitename">#codEasy</h1>
+            <!-- <p class="tm-slogon">new bootstrap template</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="tm-col-right">
+        <nav class="navbar navbar-expand-lg" id="tm-main-nav">
+          <button
+            class="navbar-toggler toggler-example mr-0 ml-auto"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-nav"
+            aria-controls="navbar-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><i class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
+            <ul class="navbar-nav text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link tm-nav-link" href="study.html"
+                  >Study <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="interview" style="margin-left: 40px">
+      <h1>C Interview Questions</h1>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne" >
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+          What's the value of the expression 5["abxdef"]?          
+        </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong><code><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">The answer is 'f'.
+
+                Explanation: The string mentioned "abxdef" is an array, and the  expression is equal to "abxdef"[5]. Why is the inside-out expression equivalent?  Because a[b] is equivalent to *(a + b) which is equivalent to *(b + a) which is equivalent to b[a]</strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+          What is a built-in function in C?
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                The most commonly used built-in functions in C are sacnf(), printf(), strcpy, strlwr, strcmp, strlen, strcat, and many more.
+
+                Built-function is also known as library functions that are provided by the system to make the life of a developer easy by assisting them to do certain commonly used predefined tasks. For example, if you need to print output or your program into the terminal, we use printf() in C            
+            </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+          In C, What is the #line used for?
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">In C, #line is used as a preprocessor to re-set the line number in the code, which takes a parameter as line number.</pre></strong></code>          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+          How can a string be converted to a number?
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                The function takes the string as an input that needs to be converted to an integer.
+
+                int atoi(const char *string)                </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFive"
+            aria-expanded="false"
+            aria-controls="collapseFive"
+          >
+          How can a number be converted to a string?          </button>
+        </h2>
+        <div
+          id="collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">The function takes a pointer to an array of char elements that need to be converted, and a format string needs to be written in a buffer as a string
+
+                int sprintf(char *str, const char *format, ...).</pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSix"
+            aria-expanded="false"
+            aria-controls="collapseSix"
+          >
+          Why doesn’t C support function overloading?          </button>
+        </h2>
+        <div
+          id="collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingSix"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+
+
+                After you compile the C source, the symbol names need to be intact in the object code. If we introduce function overloading in our source, we should also provide name mangling as a preventive measure to avoid function name clashes. Also, as C is not a strictly typed language many things(ex: data types) are convertible to each other in C. Therefore, the complexity of overload resolution can introduce confusion in a language such as C.
+
+                When you compile a C source, symbol names will remain intact. If you introduce function overloading, you should provide a name mangling technique to prevent name clashes. Consequently, like C++, you'll have machine-generated symbol names in the compiled binary.
+                
+                Additionally, C does not feature strict typing. Many things are implicitly convertible to each other in C. The complexity of overload resolution rules could introduce confusion in such kind of language
+                                </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseSeven"
+            aria-expanded="false"
+            aria-controls="collapseSeven"
+          >
+          What is the difference between global int and static int declaration?
+          </button>
+        </h2>
+        <div
+          id="collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingSeven"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;"><li> The difference between this is in scope. A truly global variable has a global scope and is visible everywhere in your program.</li>
+                                <li>global_temp is a global variable that is visible to everything in your program, although to make it visible in other modules, you'd need an ”extern int global_temp; ” in other source files if you have a multi-file project.</li>
+                                <li>A static variable has a local scope but its variables are not allocated in the stack segment of the memory. It can have less than global scope, although - like global variables - it resides in the .bss segment of your compiled binary.</li>        
+                            </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseEight"
+            aria-expanded="false"
+            aria-controls="collapseEight"
+          >
+          Difference between const char* p and char const* p?
+          </button>
+        </h2>
+        <div
+          id="collapseEight"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingEight"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">const char* p is a pointer to a const char.
+
+                char const* p is a pointer to a char const.
+                
+                Since const char and char const are the same, it's the same</pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseNine"
+            aria-expanded="false"
+            aria-controls="collapseNine"
+          >
+          Why n++ execute faster than n+1 ?
+          </button>
+        </h2>
+        <div
+          id="collapseNine"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingNine"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                n++ being a unary operation, it just needs one variable. Whereas, n = n + 1 is a binary operation that adds overhead to take more time (also binary operation: n += 1). However, in modern platforms, it depends on few things such as processor architecture, C compiler, usage in your code, and other factors such as hardware problems.
+
+                While in the modern compiler even if you write n = n + 1 it will get converted into n++ when it goes into the optimized binary, and it will be equivalently efficient.                </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTen"
+            aria-expanded="false"
+            aria-controls="collapseTen"
+          >
+          What are the advantages of Macro over function?          </button>
+        </h2>
+        <div
+          id="collapseTen"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTen"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                Macro on a high-level copy-paste, its definitions to places wherever it is called. Due to which it saves a lot of time, as no time is spent while passing the control to a new function and the control is always with the callee function. However, one downside is the size of the compiled binary is large but once compiled the program comparatively runs faster.            
+            </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEleven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseEleven"
+            aria-expanded="false"
+            aria-controls="collapseEleven"
+          >
+          Specify different types of decision control statements?          </button>
+        </h2>
+        <div
+          id="collapseEleven"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingEleven"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                All statements written in a program are executed from top to bottom one by one. Control statements are used to execute/transfer the control from one part of the program to another depending on the condition.
+
+                If-else statement.
+                    normal if-else statement.
+                    Else-if statement
+                    nested if-else statement.
+                Switch statement            
+            </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwelve">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwelve"
+            aria-expanded="false"
+            aria-controls="collapseTwelve"
+          >
+          What is the difference between struct and union in C?          </button>
+        </h2>
+        <div
+          id="collapseTwelve"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingTwelve"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                A struct is a group of complex data structures stored in a block of memory where each member on the block gets a separate memory location to make them accessible at once
+
+                Whereas in the union, all the member variables are stored at the same location on the memory as a result to which while assigning a value to a member variable will change the value of all other members.            </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThirteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThirteen"
+            aria-expanded="false"
+            aria-controls="collapseThirteen"
+          >
+          What is call by reference in functions?          </button>
+        </h2>
+        <div
+          id="collapseThirteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingThirteen"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                When we caller function makes a function call bypassing the addresses of actual parameters being passed, then this is called call by reference. In incall by reference, the operation performed on formal parameters affects the value of actual parameters because all the operations performed on the value stored in the address of actual parameters.            </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFourteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFourteen"
+            aria-expanded="false"
+            aria-controls="collapseFourteen"
+          >
+          What is pass by reference in functions?      </button>
+        </h2>
+        <div
+          id="collapseFourteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFourteen"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                In Pass by reference, the callee receives the address and makes a copy of the address of an argument into the formal parameter. Callee function uses the address to access the actual argument (to do some manipulation). If the callee function changes the value addressed at the passed address it will be visible to the caller function as well.            </pre></strong></code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFifteen">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFifteen"
+            aria-expanded="false"
+            aria-controls="collapseFifteen"
+          >
+          What is a memory leak? How to avoid it?          </button>
+        </h2>
+        <div
+          id="collapseFifteen"
+          class="accordion-collapse collapse"
+          aria-labelledby="headingFifteen"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <code><strong><pre style="font-family: Georgia, 'Times New Roman', Times, serif;">
+
+                When we assign a variable it takes space of our RAM (either heap or RAM)dependent on the size of data type, however, if a programmer uses a memory available on the heap and forgets to a delta it, at some point all the memory available on the ram will be occupied with no memory left this can lead to a memory leak.            </pre></strong></code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
